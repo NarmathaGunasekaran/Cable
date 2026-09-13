@@ -1,0 +1,7 @@
+Original file: Box Report1788929507591.xlsx
+Import must be available from the app frontend using a phone file picker.
+BOX ID is the unique key.
+New BOX IDs are added; existing BOX IDs are updated.
+Show Added / Updated / Skipped / Errors after import.
+Calculate Paid, Due, Pending, Total Outstanding.
+Show next month's bill from package cost.

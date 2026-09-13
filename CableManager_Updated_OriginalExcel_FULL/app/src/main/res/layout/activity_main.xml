@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cable Manager" android:textSize="26sp" android:textStyle="bold" android:paddingBottom="8dp" />
+    <TextView android:id="@+id/txtSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No Excel imported yet" android:textSize="14sp" android:paddingBottom="10dp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btnImport" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Import Excel" />
+        <Space android:layout_width="8dp" android:layout_height="1dp" />
+        <Button android:id="@+id/btnRefresh" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Refresh" />
+    </LinearLayout>
+
+    <EditText android:id="@+id/searchBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Search Box ID / customer / phone" android:inputType="text" android:singleLine="true" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp">
+        <TextView android:id="@+id/txtPaid" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Paid\n₹0" android:textSize="14sp" />
+        <TextView android:id="@+id/txtDue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Due\n₹0" android:textSize="14sp" />
+        <TextView android:id="@+id/txtPending" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Pending\n0" android:textSize="14sp" />
+        <TextView android:id="@+id/txtOutstanding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Outstanding\n₹0" android:textSize="14sp" />
+    </LinearLayout>
+
+    <ListView android:id="@+id/cableListView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:dividerHeight="1dp" />
+</LinearLayout>
